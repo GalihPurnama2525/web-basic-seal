@@ -16,7 +16,7 @@ button {
 }
 body{
     background-color: aquamarine;
-    background-image: url("Premium\ Photo\ _\ Photographic\ film\ near\ cameras.jpeg");
+    background-image: url(https://images.unsplash.com/photo-1596367407372-96cb88503db6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
     height: 100%;
     background-position: center;
     background-size: cover;
@@ -75,3 +75,47 @@ button {
     background-color: #04AA6D;
     color: white;
   }
+
+.hero > img {
+  width: 100%;
+}
+/* smartphone*/
+/* default (dari 0px sampai min-width selanjutnya */
+.hero > img {
+   width: 80%
+}
+  
+/* tablet*/
+/* jika memasuki 768px*/
+@media (min-width:768px){
+  .hero > img {
+    width: 80%;
+  }
+}
+
+
+/* pc */
+/* jika memasuki 992px */
+@media (min-width: 992px){
+  .hero > img {
+    width: 60%;      
+  }
+}
+
+.image-hero {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.title{
+  font-family: 'Raleway', sans-serif;
+}
+.subtitle{
+  letter-spacing: 10px;
+}
+
+.text-about {
+  text-indent: 50px;
+  text-align: justify;
+}
